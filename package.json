@@ -1,0 +1,55 @@
+{
+  "name": "playlist-finder",
+  "version": "1.0.0",
+  "description": "Input any prompt and receive Spotify playlist recommendations",
+  "main": "index.html",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "start": "NODE_ENV=production nodemon server/server.js",
+    "build": "webpack",
+    "dev": "NODE_ENV=development webpack serve --open & nodemon server/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/waisangu/playlist-finder.git"
+  },
+  "keywords": [
+    "react",
+    "express",
+    "mongodb",
+    "javascript",
+    "and",
+    "more"
+  ],
+  "author": "Wai San Gu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/waisangu/playlist-finder/issues"
+  },
+  "homepage": "https://github.com/waisangu/playlist-finder#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "mongodb": "^5.6.0",
+    "mongoose": "^7.2.4",
+    "nodemon": "^3.0.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "redux-devtools-extension": "^2.13.9"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.22.5",
+    "@babel/preset-react": "^7.22.5",
+    "babel-loader": "^9.1.2",
+    "css-loader": "^6.8.1",
+    "dotenv": "^16.3.1",
+    "html-webpack-plugin": "^5.5.3",
+    "sass": "^1.63.4",
+    "sass-loader": "^13.3.2",
+    "style-loader": "^3.3.3",
+    "webpack": "^5.86.0",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^4.15.1"
+  }
+}
